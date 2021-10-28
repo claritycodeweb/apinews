@@ -1,14 +1,26 @@
 {
-  "name": "hackernewsapis",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@claritycodeweb/apinews",
+  "repository": "claritycodeweb/apinews",
+  "version": "1.0.5",
+  "description": "React lazy/infinity load", 
+  "author": "Rafał Pisarczyk",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "inhibit",
+    "heroku",
+    "npm",
+    "package",
+    "claritycodeweb"
+  ],
   "dependencies": {
     "axios": "^0.21.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^4.0.1",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "gh-pages": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint './src/**/*.{js,jsx}'",
-    "lint:fix": "eslint './src/**/*.{js,jsx}' --fix"
+    "lint:fix": "eslint './src/**/*.{js,jsx}' --fix",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
